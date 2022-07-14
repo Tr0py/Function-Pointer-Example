@@ -3,7 +3,7 @@
 ## Compile
 
 ```
-make fp
+make
 ```
 
 ## Run
