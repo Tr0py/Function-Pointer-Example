@@ -1,10 +1,11 @@
-CC=gcc
+objects = fp fp1 fp2 fp3 fp4
 
-fp: fp.c
-	$(CC) -o $@ $<
+all: $(objects)
 
-run: fp
-	./$<
+$(objects): 
+
+run: all
+	for obj in $(objects); do echo ./$$obj; ./$$obj; done
 
 clean:
-	rm fp
+	rm $(objects)
